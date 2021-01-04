@@ -11,15 +11,15 @@ socket.onmessage = function (message) {
     if (command == 'create'){
         window.localStorage.setItem('room',value);
     }else if(command == 'raise'){
+        
+    }else if(command == 'join'){
 
-    }else if(command == 'join')
+    }
     
 }
 
 window.onload = function (){
-
     document.getElementById("createRoom").addEventListener("click", createRoom);
-
 }
 
 function createRoom (){

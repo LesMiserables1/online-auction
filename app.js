@@ -25,7 +25,7 @@ function connection(ws) {
         } else if (command === 'raise') {
             ws.send(`raise ${value} ${room}`);
         } else if (command === 'join'){
-            ws.send(`join ${value}`)
+            ws.send(`join ${value}`);
         }
     }
 }
